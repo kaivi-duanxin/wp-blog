@@ -6,21 +6,20 @@
 // Sum memory image layout
 // Keep monthly journal images centered and visually consistent.
 .single.special .content {
-  > p:has(> img[src^="/20"][src*="yue/"]) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.25rem auto;
-    text-align: center;
+  > hr {
+    width: 100%;
+    max-width: 900px;
+    height: 0;
+    margin: 2rem auto;
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.32);
   }
 
-  > p:has(> img[src^="/20"][src*="yue/"]) > img {
+  img[src^="/20"][src*="yue/"] {
     display: block;
     width: 100%;
-    max-width: 760px;
-    height: 64vw;
-    min-height: 220px;
-    max-height: 680px;
+    max-width: 860px;
+    height: 560px;
     margin: 0 auto;
     padding: 0.5rem;
     object-fit: contain;
@@ -30,23 +29,12 @@
     border: 1px solid rgba(128, 128, 128, 0.18);
     border-radius: 6px;
   }
-
-  > hr:has(+ p > img[src^="/20"][src*="yue/"]),
-  > p:has(> img[src^="/20"][src*="yue/"]) + hr {
-    width: 100%;
-    max-width: 820px;
-    height: 0;
-    margin: 1.75rem auto;
-    border: 0;
-    border-top: 1px solid rgba(128, 128, 128, 0.32);
-  }
 }
 
-@media (max-width: 680px) {
-  .single.special .content > p:has(> img[src^="/20"][src*="yue/"]) > img {
-    width: 100%;
+@media (max-width: 760px) {
+  .single.special .content img[src^="/20"][src*="yue/"] {
     height: 78vw;
-    min-height: 220px;
+    min-height: 240px;
     max-height: 520px;
     padding: 0.35rem;
   }
