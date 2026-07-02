@@ -2,3 +2,52 @@
 // Custom style
 // 自定义样式
 // ==============================
+
+// Sum memory image layout
+// Keep monthly journal images centered and visually consistent.
+.single.special .content {
+  > p:has(> img[src^="/20"][src*="yue/"]) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem auto;
+    text-align: center;
+  }
+
+  > p:has(> img[src^="/20"][src*="yue/"]) > img {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: 64vw;
+    min-height: 220px;
+    max-height: 680px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    object-fit: contain;
+    object-position: center center;
+    box-sizing: border-box;
+    background: rgba(128, 128, 128, 0.06);
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    border-radius: 6px;
+  }
+
+  > hr:has(+ p > img[src^="/20"][src*="yue/"]),
+  > p:has(> img[src^="/20"][src*="yue/"]) + hr {
+    width: 100%;
+    max-width: 820px;
+    height: 0;
+    margin: 1.75rem auto;
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.32);
+  }
+}
+
+@media (max-width: 680px) {
+  .single.special .content > p:has(> img[src^="/20"][src*="yue/"]) > img {
+    width: 100%;
+    height: 78vw;
+    min-height: 220px;
+    max-height: 520px;
+    padding: 0.35rem;
+  }
+}
