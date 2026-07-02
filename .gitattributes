@@ -1,0 +1,9 @@
+*.jpg -delta
+*.jpeg -delta
+*.png -delta
+*.gif -delta
+*.webp -delta
+*.zip -delta
+*.woff -delta
+*.woff2 -delta
+*.ttf -delta

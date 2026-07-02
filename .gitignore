@@ -1,0 +1,7 @@
+public/
+resources/
+.hugo_build.lock
+tempalte/
+static/**/*.zip
+.DS_Store
+Thumbs.db

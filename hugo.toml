@@ -1,0 +1,5 @@
+#baseURL = 'https://kaikaili.xyz/'
+#canonifyURLs = true
+languageCode = 'en-us'
+title = 'Kaivi Blog-学习技术分享'
+theme = "FixIt-master"
